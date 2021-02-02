@@ -32,33 +32,81 @@
             <hr class="accordion__divider"/>
 
             <section class="accordion__content">
-                <section class="content-info">
-                    <header class="content__header">
-                        <button class="content__open-btn">
-                            <!--toggle between
-                            fa-plus & fa-minus
-                            on click of the content__header__icon button-->
-                            <i class="fa fa-plus"></i>
-                        </button>
-                        <h2 class="content__header__heading">Why this term?</h2>
-                    </header>
-                    <section class="content__content">
-                        <p class="content__text">
-                        Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Facilis temporibus
-                        qui aliquid, adipisci tempora porro
-                        error ipsum aut.
-                        Accusantium repudiandae
-                        tempore dignissimos
-                        animi cumque accusamus
-                        enim suscipit,
-                        vero tempora ipsum!
-                        </p>
-                        <button class="content__btn">
-                            <a href="#" class="content__btn__link">Learn more</a>
-                        </button>
-                    </section>
+                <!--
+                toggle between
+                fa-plus & fa-minus
+                on click of the content__header__icon button
+                ---
+                add the class accordion__content__section--open
+                to the accordion__content__section
+                &
+                add the class content-info--open
+                to the content-info
+                -->
+                <section class="accordion__content__section">
+                    <button class="content__open-btn">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                    <div>
+                        <h2 class="content-info__heading">Why this term?</h2>
+                        
+                        <div class="content-info">
+                            <p class="content-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsam officia maxime unde animi reprehenderit voluptates quae, sint veniam voluptatem itaque voluptas, tempora harum possimus dolorum impedit mollitia exercitationem accusamus!</p>
+                            <button class="content__btn">
+                                <a href="#" class="content__btn__link">Learn more</a>
+                            </button>
+                        </div>
+                    </div>
                 </section>
+
+                <section class="accordion__content__section">
+                    <button class="content__open-btn">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                    <div>
+                        <h2 class="content-info__heading">When to use an accordion component</h2>
+                        
+                        <div class="content-info">
+                            <p class="content-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsam officia maxime unde animi reprehenderit voluptates quae, sint veniam voluptatem itaque voluptas, tempora harum possimus dolorum impedit mollitia exercitationem accusamus!</p>
+                            <button class="content__btn">
+                                <a href="#" class="content__btn__link">Learn more</a>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="accordion__content__section accordion__content__section--open">
+                    <button class="content__open-btn">
+                        <i class="fa fa-minus"></i>
+                    </button>
+                    <div>
+                        <h2 class="content-info__heading">How can it be defined?</h2>
+                        
+                        <div class="content-info content-info--open">
+                            <p class="content-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsam officia maxime unde animi reprehenderit voluptates quae, sint veniam voluptatem itaque voluptas, tempora harum possimus dolorum impedit mollitia exercitationem accusamus!</p>
+                            <button class="content__btn">
+                                <a href="#" class="content__btn__link">Learn more</a>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="accordion__content__section">
+                    <button class="content__open-btn">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                    <div>
+                        <h2 class="content-info__heading">When to use an accordion component?</h2>
+                        
+                        <div class="content-info">
+                            <p class="content-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ipsam officia maxime unde animi reprehenderit voluptates quae, sint veniam voluptatem itaque voluptas, tempora harum possimus dolorum impedit mollitia exercitationem accusamus!</p>
+                            <button class="content__btn">
+                                <a href="#" class="content__btn__link">Learn more</a>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
             </section>
         </article>        
     </body>
