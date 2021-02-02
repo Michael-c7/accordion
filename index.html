@@ -9,22 +9,40 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles.css">
     </head>
+
+    <!--
+        ICONS ->
+        Plus
+        <i class="fa fa-plus"></i>
+        -----
+        Minus
+        <i class="fa fa-minus"></i>
+        -----
+    -->
     <body>
-        <article class="accordian">
-            <header>
-                <h1></h1>
-                <h2></h2>
+        <article class="accordion">
+            <header class="accordion__header">
+                <h1 class="accordion__header-h1">Several windows stacked on each other</h1>
+                <h2 class="accordion__header-h2">
+                    The accordion is a graphical control element comprising a 
+                    vertically stacked list of items, suck as labels or thumbnails
+                </h2>
             </header>
 
-            <hr/>
+            <hr class="accordion__divider"/>
 
-            <section>
-                <section>
-                    <header>
-                        <span>+ icon here</span>
-                        <h2>Why this term?</h2>
+            <section class="accordion__content">
+                <section class="content-info">
+                    <header class="content__header">
+                        <button class="content__header__icon">
+                            <!--toggle between
+                            fa-plus & fa-minus
+                            on click of the content__header__icon button-->
+                            <i class="fa fa-plus"></i>
+                        </button>
+                        <h2 class="content__header__heading">Why this term?</h2>
                     </header>
-                    <div>
+                    <p class="content__text">
                         Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Facilis temporibus
                         qui aliquid, adipisci tempora porro
@@ -34,11 +52,11 @@
                         animi cumque accusamus
                         enim suscipit,
                         vero tempora ipsum!
-                    </div>
-                    <button><a href="#">Learn more</a></button>
+                    </p>
+                    <button class="content__btn">
+                        <a href="#" class="content__btn--link">Learn more</a>
+                    </button>
                 </section>
-
-
             </section>
         </article>        
     </body>

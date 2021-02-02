@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    /*color scheme*/
-    /* --color:#F4F3F9;
-    --color:#9497A5;
-    --color:#B4B4C3;
-    --color:#434282;
-    --color:#7C7C7C;
-    --color:#7C74FC; */
-
-    --purple:#5352ed;
+    /*color scheme
+    lightest to darkest*/
+    --gray-050:#F4F3F9;
+    --gray-100:#B4B4C3;
+    --gray-150:#9497A5;
+    --gray-200:#7C7C7C;
+    --purple-050:#7C74FC;
+    --purple-100:#434282;
 }
 
 *,
@@ -22,5 +21,38 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color:var(--gray-050);
 }
 
+
+
+.accordion {
+    background-color:#fff;
+    width:30rem;
+    
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.accordion__header {
+    padding:0 2rem;
+}
+
+.accordion__header-h1 {
+    font-size:1.25rem;
+    font-weight:600;
+    margin:2rem 0;
+}
+
+.accordion__header-h2 {
+    font-size:0.85rem;
+    font-weight:400;
+}
+
+
+.accordion__divider {
+    margin:2.5rem 0;
+    border: 1px solid var(--gray-050);
+}
